@@ -29,7 +29,6 @@ body {
 #profile-card-section {
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100vh;
 
   .profile-card-container, .profile-card-info, .profile-card-contact {
@@ -46,6 +45,7 @@ body {
     height: 428px;
     padding: 24px 16px;
     gap: 40px;
+    margin-top: 200px;
 
     .profile-card-info {
       &_profile-picture {
