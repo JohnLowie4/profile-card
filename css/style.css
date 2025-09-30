@@ -68,6 +68,11 @@ body {
 #profile-card-section .profile-card-container .profile-card-contact_contact-me:hover {
   background-color: rgb(52.5714285714, 43.5357142857, 163.4642857143);
 }
+#profile-card-section .profile-card-container .profile-card-contact_contact-me:focus {
+  background-color: rgb(52.5714285714, 43.5357142857, 163.4642857143);
+  outline: 2px solid rgb(200.1666666667, 196.9583333333, 239.5416666667);
+  outline-offset: 2px;
+}
 #profile-card-section .profile-card-container .profile-card-contact_socials {
   display: flex;
   gap: 16px;
@@ -88,6 +93,12 @@ body {
 #profile-card-section .profile-card-container .profile-card-contact_socials-logo:hover {
   background-color: #f9fafb;
   border-radius: 4px;
+}
+#profile-card-section .profile-card-container .profile-card-contact_socials-logo:focus {
+  background-color: #f9fafb;
+  border-radius: 4px;
+  outline: 2px solid rgb(200.1666666667, 196.9583333333, 239.5416666667);
+  outline-offset: 2px;
 }
 
 * {

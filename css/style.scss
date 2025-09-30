@@ -95,6 +95,12 @@ body {
         background-color: darken($blue, 10%);
       }
 
+      &_contact-me:focus {
+        background-color: darken($blue, 10%);
+        outline: 2px solid lighten($blue, 35%);
+        outline-offset: 2px;
+      }
+
       &_socials {
         display: flex;
         gap: 16px;
@@ -117,6 +123,13 @@ body {
         &-logo:hover {
           background-color: $off-white;
           border-radius: 4px;
+        }
+
+        &-logo:focus {
+          background-color: $off-white;
+          border-radius: 4px;
+          outline: 2px solid lighten($blue, 35%);
+          outline-offset: 2px;
         }
       }
     }
