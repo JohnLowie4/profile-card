@@ -8,6 +8,88 @@ body {
   background: linear-gradient(142deg, #f9fafb, #d2d6db);
 }
 
+#profile-card-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#profile-card-section .profile-card-container, #profile-card-section .profile-card-info, #profile-card-section .profile-card-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#profile-card-section .profile-card-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  height: 428px;
+  padding: 24px 16px;
+  gap: 40px;
+}
+#profile-card-section .profile-card-container .profile-card-info_profile-picture {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 24px;
+}
+#profile-card-section .profile-card-container .profile-card-info_name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #171717;
+  margin-bottom: 4px;
+}
+#profile-card-section .profile-card-container .profile-card-info_occupation {
+  color: #525252;
+  margin-bottom: 24px;
+  font-size: 12px;
+  font-weight: 400;
+}
+#profile-card-section .profile-card-container .profile-card-info_summary {
+  color: #525252;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+#profile-card-section .profile-card-container .profile-card-contact {
+  gap: 24px;
+  width: 100%;
+}
+#profile-card-section .profile-card-container .profile-card-contact_contact-me {
+  background-color: #4338ca;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  width: 100%;
+  height: 44px;
+  cursor: pointer;
+}
+#profile-card-section .profile-card-container .profile-card-contact_contact-me:hover {
+  background-color: rgb(52.5714285714, 43.5357142857, 163.4642857143);
+}
+#profile-card-section .profile-card-container .profile-card-contact_socials {
+  display: flex;
+  gap: 16px;
+  height: 36px;
+}
+#profile-card-section .profile-card-container .profile-card-contact_socials-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+}
+#profile-card-section .profile-card-container .profile-card-contact_socials-logo img {
+  width: 20px;
+  height: 20px;
+}
+#profile-card-section .profile-card-container .profile-card-contact_socials-logo:hover {
+  background-color: #f9fafb;
+  border-radius: 4px;
+}
+
 * {
   box-sizing: border-box;
 }

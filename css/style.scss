@@ -1,13 +1,17 @@
 $white: #ffffff;
 $off-white: #f9fafb;
 $light-gray: #d2d6db;
-$medium-gray: #525252;
-$dark-gray: #171717;
+$dark-gray: #525252;
+$black: #171717;
 $blue: #4338ca;
 
 $text-sm: 12px;
 $text-base: 16px;
 $text-xl: 20px;
+
+$font-normal: 400;
+$font-medium: 500;
+$font-semibold: 600;
 
 body {
   margin: 0;
@@ -20,6 +24,103 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   background: linear-gradient(142deg, $off-white, $light-gray );
+}
+
+#profile-card-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .profile-card-container, .profile-card-info, .profile-card-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-card-container {
+    background-color: $white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    height: 428px;
+    padding: 24px 16px;
+    gap: 40px;
+
+    .profile-card-info {
+      &_profile-picture {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 24px;
+      }
+
+      &_name {
+        font-size: $text-xl;
+        font-weight: $font-medium;
+        color: $black;
+        margin-bottom: 4px;
+      }
+
+      &_occupation {
+        color: $dark-gray;
+        margin-bottom: 24px;
+        font-size: $text-sm;
+        font-weight: $font-normal;
+      }
+
+      &_summary {
+        color: $dark-gray;
+        text-align: center;
+        font-size: $text-base;
+        font-weight: $font-normal;
+      }
+    }
+
+    .profile-card-contact {
+      gap: 24px;
+      width: 100%;
+
+      &_contact-me {
+        background-color: $blue;
+        color: $white;
+        font-size: $text-base;
+        font-weight: $font-medium;
+        border-radius: 4px;
+        width: 100%;
+        height: 44px;
+        cursor: pointer;
+      }
+
+      &_contact-me:hover {
+        background-color: darken($blue, 10%);
+      }
+
+      &_socials {
+        display: flex;
+        gap: 16px;
+        height: 36px;
+
+        &-logo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          width: 36px;
+          height: 36px;
+
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+
+        &-logo:hover {
+          background-color: $off-white;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
 }
 
 * {
