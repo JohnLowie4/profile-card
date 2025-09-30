@@ -1,5 +1,14 @@
-/* Put any custom CSS styles here.  */
-/* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
+$white: #ffffff;
+$off-white: #f9fafb;
+$light-gray: #d2d6db;
+$medium-gray: #525252;
+$dark-gray: #171717;
+$blue: #4338ca;
+
+$text-sm: 12px;
+$text-base: 16px;
+$text-xl: 20px;
+
 body {
   margin: 0;
   font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
@@ -10,7 +19,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  background: linear-gradient(142deg, #f9fafb, #d2d6db)
+  background: linear-gradient(142deg, $off-white, $light-gray );
 }
 
 * {
